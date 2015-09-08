@@ -77,11 +77,8 @@
 		B58CD8FF1B9F38E700AE9D90 /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
-				B58CD9021B9F38E700AE9D90 /* AppDelegate.swift */,
 				B58CD9041B9F38E700AE9D90 /* ViewController.swift */,
 				B58CD9061B9F38E700AE9D90 /* Main.storyboard */,
-				B58CD9091B9F38E700AE9D90 /* Images.xcassets */,
-				B58CD90B1B9F38E700AE9D90 /* LaunchScreen.xib */,
 				B58CD9001B9F38E700AE9D90 /* Supporting Files */,
 			);
 			path = FirstApp;
@@ -90,6 +87,9 @@
 		B58CD9001B9F38E700AE9D90 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B58CD90B1B9F38E700AE9D90 /* LaunchScreen.xib */,
+				B58CD9091B9F38E700AE9D90 /* Images.xcassets */,
+				B58CD9021B9F38E700AE9D90 /* AppDelegate.swift */,
 				B58CD9011B9F38E700AE9D90 /* Info.plist */,
 			);
 			name = "Supporting Files";
