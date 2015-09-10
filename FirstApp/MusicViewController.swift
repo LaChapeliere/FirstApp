@@ -29,23 +29,47 @@ class MusicViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pinkFluffyUnicornsDancingOnRainbows = self.setupAudioPlayerWithFile("PinkFluffyUnicornsMusic", type:"mp3")
+        musicPlayers["Unicorn"] = AVAudioPlayer()
+        musicPlayers["Unicorn"] = self.setupAudioPlayerWithFile("PinkFluffyUnicornsMusic", type:"mp3")
+        musicPlayers["Dion"] = AVAudioPlayer()
+        musicPlayers["Dion"] = self.setupAudioPlayerWithFile("CelineDion", type:"mp3")
+        musicPlayers["DeGaulle"] = AVAudioPlayer()
+        musicPlayers["DeGaulle"] = self.setupAudioPlayerWithFile("DeGaulle", type:"mp3")
+        musicPlayers["KingLouis"] = AVAudioPlayer()
+        musicPlayers["KingLouis"] = self.setupAudioPlayerWithFile("KingLouisSong", type:"mp3")
+        musicPlayers["NyanCat"] = AVAudioPlayer()
+        musicPlayers["NyanCat"] = self.setupAudioPlayerWithFile("NyanCat", type:"mp3")
+        musicPlayers["Marche"] = AVAudioPlayer()
+        musicPlayers["Marche"] = self.setupAudioPlayerWithFile("MarcheImperiale", type:"mp3")
+        
     }
     
-    var pinkFluffyUnicornsDancingOnRainbows = AVAudioPlayer()
+    var musicPlayers = [String: AVAudioPlayer]()
+    var currentPlayer: AVAudioPlayer?
+    
+    @IBAction func chooseMusic(sender: UIButton) {
+        if let name = sender.currentTitle {
+            currentPlayer = musicPlayers[name]
+            if currentPlayer != nil {
+                currentPlayer?.prepareToPlay()
+            }
+        }
+    }
     
     @IBAction func musicButtons(sender: UIButton) {
-        let buttonText = sender.titleLabel?.text
-        switch buttonText! {
-        case "▶︎":
-            pinkFluffyUnicornsDancingOnRainbows.play()
-        case "ll":
-            pinkFluffyUnicornsDancingOnRainbows.pause()
-        case "◼︎":
-            pinkFluffyUnicornsDancingOnRainbows.stop()
-            pinkFluffyUnicornsDancingOnRainbows.currentTime = 0
-        default:
+        if let musicPlayer = currentPlayer {
+            let buttonText = sender.titleLabel?.text
+            switch buttonText! {
+            case "▶︎":
+                musicPlayer.play()
+            case "ll":
+                musicPlayer.pause()
+            case "◼︎":
+                musicPlayer.stop()
+                musicPlayer.currentTime = 0
+            default:
             break
+            }
         }
     }
     

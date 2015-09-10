@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D638399B-321D-4B82-9E0D-56C04A6D1B04</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>FirstApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C0BC123C67A0553D9302268BD04258E192C3325B</key>
 		<string>https://github.com/LaChapeliere/FirstApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FirstApp.xcodeproj/project.xcworkspace</string>
+	<string>FirstApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C0BC123C67A0553D9302268BD04258E192C3325B</key>
