@@ -29,46 +29,45 @@ class MusicViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        musicPlayers["Unicorn"] = AVAudioPlayer()
-        musicPlayers["Unicorn"] = self.setupAudioPlayerWithFile("PinkFluffyUnicornsMusic", type:"mp3")
-        musicPlayers["Dion"] = AVAudioPlayer()
-        musicPlayers["Dion"] = self.setupAudioPlayerWithFile("CelineDion", type:"mp3")
-        musicPlayers["DeGaulle"] = AVAudioPlayer()
-        musicPlayers["DeGaulle"] = self.setupAudioPlayerWithFile("DeGaulle", type:"mp3")
-        musicPlayers["KingLouis"] = AVAudioPlayer()
-        musicPlayers["KingLouis"] = self.setupAudioPlayerWithFile("KingLouisSong", type:"mp3")
-        musicPlayers["NyanCat"] = AVAudioPlayer()
-        musicPlayers["NyanCat"] = self.setupAudioPlayerWithFile("NyanCat", type:"mp3")
-        musicPlayers["Marche"] = AVAudioPlayer()
-        musicPlayers["Marche"] = self.setupAudioPlayerWithFile("MarcheImperiale", type:"mp3")
-        
+        musics["Unicorn"] = "PinkFluffyUnicornsMusic"
+        musics["Dion"] = "CelineDion"
+        musics["DeGaulle"] = "DeGaulle"
+        musics["KingLouis"] = "KingLouisSong"
+        musics["NyanCat"] = "NyanCat"
+        musics["Marche"] = "MarcheImperiale"
+        currentPlayer = AVAudioPlayer()
+        currentPlayer! = self.setupAudioPlayerWithFile("5min", type: "mp3")
+        currentPlayer!.prepareToPlay()
     }
     
-    var musicPlayers = [String: AVAudioPlayer]()
-    var currentPlayer: AVAudioPlayer?
-    
-    @IBAction func chooseMusic(sender: UIButton) {
-        if let name = sender.currentTitle {
-            currentPlayer = musicPlayers[name]
-            if currentPlayer != nil {
-                currentPlayer?.prepareToPlay()
+    @IBAction func musicButton(sender: UIButton) {
+        let buttonText = sender.titleLabel?.text
+        if let player = currentPlayer {
+            switch buttonText! {
+            case "▶︎":
+                player.play()
+            case "ll":
+                player.pause()
+            case "◼︎":
+                player.stop()
+                player.currentTime = 0
+            default:
+                break
             }
         }
     }
     
-    @IBAction func musicButtons(sender: UIButton) {
-        if let musicPlayer = currentPlayer {
-            let buttonText = sender.titleLabel?.text
-            switch buttonText! {
-            case "▶︎":
-                musicPlayer.play()
-            case "ll":
-                musicPlayer.pause()
-            case "◼︎":
-                musicPlayer.stop()
-                musicPlayer.currentTime = 0
-            default:
-            break
+    var musics = [String: String]()
+    var currentPlayer: AVAudioPlayer?
+    
+    @IBAction func chooseMusic(sender: UIButton) {
+        if let name = sender.currentTitle {
+            if let file = musics[name] {
+                currentPlayer?.stop()
+                var newPlayer = AVAudioPlayer()
+                newPlayer = self.setupAudioPlayerWithFile(file, type: "mp3")
+                currentPlayer = newPlayer
+                currentPlayer!.prepareToPlay()
             }
         }
     }

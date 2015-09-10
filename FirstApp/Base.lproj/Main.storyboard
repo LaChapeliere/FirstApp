@@ -98,7 +98,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="musicButtons:" destination="j2T-aP-9pr" eventType="touchUpInside" id="cat-o4-XAG"/>
+                                    <action selector="musicButton:" destination="j2T-aP-9pr" eventType="touchUpInside" id="4y1-x2-0YI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0U-rk-7UD">
@@ -108,7 +108,7 @@
                                     <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="musicButtons:" destination="j2T-aP-9pr" eventType="touchUpInside" id="ZjN-C8-fNa"/>
+                                    <action selector="musicButton:" destination="j2T-aP-9pr" eventType="touchUpInside" id="4hH-BC-ojk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80x-y5-2s3">
@@ -118,7 +118,7 @@
                                     <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="musicButtons:" destination="j2T-aP-9pr" eventType="touchUpInside" id="JMH-cJ-4kc"/>
+                                    <action selector="musicButton:" destination="j2T-aP-9pr" eventType="touchUpInside" id="YIe-ln-b6T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjK-AL-5lq">

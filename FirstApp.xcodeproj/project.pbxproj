@@ -19,6 +19,7 @@
 		B58CD9261B9F3F4700AE9D90 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CD9241B9F3F4700AE9D90 /* MusicViewController.swift */; };
 		B58CD9281B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B58CD9271B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 */; };
 		B58CD9291B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B58CD9271B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 */; };
+		B5B8367D1BA1C9540052C04D /* 5min.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5B8367C1BA1C9540052C04D /* 5min.mp3 */; };
 		B5D8D68F1BA09BAA0033CC07 /* CelineDion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5D8D68E1BA09BAA0033CC07 /* CelineDion.mp3 */; };
 		B5D8D6911BA09BD30033CC07 /* MarcheImperiale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5D8D6901BA09BD30033CC07 /* MarcheImperiale.mp3 */; };
 		B5D8D6931BA09C6A0033CC07 /* NyanCat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5D8D6921BA09C6A0033CC07 /* NyanCat.mp3 */; };
@@ -49,6 +50,7 @@
 		B58CD9181B9F38E700AE9D90 /* FirstAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppTests.swift; sourceTree = "<group>"; };
 		B58CD9241B9F3F4700AE9D90 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		B58CD9271B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PinkFluffyUnicornsMusic.mp3; sourceTree = "<group>"; };
+		B5B8367C1BA1C9540052C04D /* 5min.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5min.mp3; sourceTree = "<group>"; };
 		B5D8D68E1BA09BAA0033CC07 /* CelineDion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CelineDion.mp3; sourceTree = "<group>"; };
 		B5D8D6901BA09BD30033CC07 /* MarcheImperiale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MarcheImperiale.mp3; sourceTree = "<group>"; };
 		B5D8D6921BA09C6A0033CC07 /* NyanCat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = NyanCat.mp3; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		B5D8D68D1BA095340033CC07 /* SoundAssets */ = {
 			isa = PBXGroup;
 			children = (
+				B5B8367C1BA1C9540052C04D /* 5min.mp3 */,
 				B58CD9271B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 */,
 				B5D8D68E1BA09BAA0033CC07 /* CelineDion.mp3 */,
 				B5D8D6961BA09DD30033CC07 /* DeGaulle.mp3 */,
@@ -232,6 +235,7 @@
 				B5D8D6911BA09BD30033CC07 /* MarcheImperiale.mp3 in Resources */,
 				B5D8D6931BA09C6A0033CC07 /* NyanCat.mp3 in Resources */,
 				B5D8D6971BA09DD30033CC07 /* DeGaulle.mp3 in Resources */,
+				B5B8367D1BA1C9540052C04D /* 5min.mp3 in Resources */,
 				B58CD9281B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 in Resources */,
 				B58CD90A1B9F38E700AE9D90 /* Images.xcassets in Resources */,
 			);
