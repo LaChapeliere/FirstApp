@@ -8,22 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-
-
-//    enum Modules {
-//        case Music
-//    }
-//    
-//    var possibleModules = ["Music": Modules.Music]
-//    
-//    @IBAction func lauchModule(sender: UIButton) {
-//        if let newModule = possibleModules[sender.description]
-//        {
-//            
-//        }
-//    }
-    
+class MainViewController: UIViewController {    
     
 }
 

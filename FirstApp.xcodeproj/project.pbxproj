@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5664E431BA32DFD00D3FA1C /* GraphigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5664E421BA32DFD00D3FA1C /* GraphigViewController.swift */; };
+		B57397871BA6D562008AA9E8 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57397861BA6D562008AA9E8 /* GraphView.swift */; };
 		B58CD9031B9F38E700AE9D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CD9021B9F38E700AE9D90 /* AppDelegate.swift */; };
 		B58CD9051B9F38E700AE9D90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CD9041B9F38E700AE9D90 /* MainViewController.swift */; };
 		B58CD9081B9F38E700AE9D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58CD9061B9F38E700AE9D90 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 		B58CD9281B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B58CD9271B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 */; };
 		B58CD9291B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B58CD9271B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 */; };
 		B5B8367D1BA1C9540052C04D /* 5min.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5B8367C1BA1C9540052C04D /* 5min.mp3 */; };
+		B5BE596F1BA6C65C002AE353 /* PushButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE596E1BA6C65C002AE353 /* PushButtonView.swift */; };
+		B5BE59711BA6CE20002AE353 /* GraphingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE59701BA6CE20002AE353 /* GraphingModel.swift */; };
 		B5D8D68F1BA09BAA0033CC07 /* CelineDion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5D8D68E1BA09BAA0033CC07 /* CelineDion.mp3 */; };
 		B5D8D6911BA09BD30033CC07 /* MarcheImperiale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5D8D6901BA09BD30033CC07 /* MarcheImperiale.mp3 */; };
 		B5D8D6931BA09C6A0033CC07 /* NyanCat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5D8D6921BA09C6A0033CC07 /* NyanCat.mp3 */; };
@@ -38,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B5664E421BA32DFD00D3FA1C /* GraphigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphigViewController.swift; sourceTree = "<group>"; };
+		B57397861BA6D562008AA9E8 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		B58CD8FD1B9F38E700AE9D90 /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58CD9011B9F38E700AE9D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B58CD9021B9F38E700AE9D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +57,8 @@
 		B58CD9241B9F3F4700AE9D90 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		B58CD9271B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PinkFluffyUnicornsMusic.mp3; sourceTree = "<group>"; };
 		B5B8367C1BA1C9540052C04D /* 5min.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5min.mp3; sourceTree = "<group>"; };
+		B5BE596E1BA6C65C002AE353 /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
+		B5BE59701BA6CE20002AE353 /* GraphingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphingModel.swift; sourceTree = "<group>"; };
 		B5D8D68E1BA09BAA0033CC07 /* CelineDion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CelineDion.mp3; sourceTree = "<group>"; };
 		B5D8D6901BA09BD30033CC07 /* MarcheImperiale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MarcheImperiale.mp3; sourceTree = "<group>"; };
 		B5D8D6921BA09C6A0033CC07 /* NyanCat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = NyanCat.mp3; sourceTree = "<group>"; };
@@ -76,6 +84,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B57397881BA70566008AA9E8 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				B58CD9241B9F3F4700AE9D90 /* MusicViewController.swift */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
+		B57397891BA70571008AA9E8 /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				B5BE59701BA6CE20002AE353 /* GraphingModel.swift */,
+				B57397861BA6D562008AA9E8 /* GraphView.swift */,
+				B5664E421BA32DFD00D3FA1C /* GraphigViewController.swift */,
+				B5BE596E1BA6C65C002AE353 /* PushButtonView.swift */,
+			);
+			name = Graphs;
+			sourceTree = "<group>";
+		};
 		B58CD8F41B9F38E700AE9D90 = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +124,10 @@
 		B58CD8FF1B9F38E700AE9D90 /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
-				B58CD9041B9F38E700AE9D90 /* MainViewController.swift */,
 				B58CD9061B9F38E700AE9D90 /* Main.storyboard */,
-				B58CD9241B9F3F4700AE9D90 /* MusicViewController.swift */,
+				B58CD9041B9F38E700AE9D90 /* MainViewController.swift */,
+				B57397881BA70566008AA9E8 /* Music */,
+				B57397891BA70571008AA9E8 /* Graphs */,
 				B58CD9001B9F38E700AE9D90 /* Supporting Files */,
 			);
 			path = FirstApp;
@@ -257,9 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BE596F1BA6C65C002AE353 /* PushButtonView.swift in Sources */,
 				B58CD9251B9F3F4700AE9D90 /* MusicViewController.swift in Sources */,
+				B57397871BA6D562008AA9E8 /* GraphView.swift in Sources */,
 				B58CD9051B9F38E700AE9D90 /* MainViewController.swift in Sources */,
+				B5BE59711BA6CE20002AE353 /* GraphingModel.swift in Sources */,
 				B58CD9031B9F38E700AE9D90 /* AppDelegate.swift in Sources */,
+				B5664E431BA32DFD00D3FA1C /* GraphigViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
