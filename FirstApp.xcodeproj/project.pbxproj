@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5664E431BA32DFD00D3FA1C /* GraphigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5664E421BA32DFD00D3FA1C /* GraphigViewController.swift */; };
+		B5664E431BA32DFD00D3FA1C /* GraphingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5664E421BA32DFD00D3FA1C /* GraphingViewController.swift */; };
 		B57397871BA6D562008AA9E8 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57397861BA6D562008AA9E8 /* GraphView.swift */; };
 		B58CD9031B9F38E700AE9D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CD9021B9F38E700AE9D90 /* AppDelegate.swift */; };
 		B58CD9051B9F38E700AE9D90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CD9041B9F38E700AE9D90 /* MainViewController.swift */; };
@@ -21,14 +21,18 @@
 		B58CD9261B9F3F4700AE9D90 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CD9241B9F3F4700AE9D90 /* MusicViewController.swift */; };
 		B58CD9281B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B58CD9271B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 */; };
 		B58CD9291B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B58CD9271B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 */; };
+		B5A7ED631BA962580083C9FE /* GraphLineChartViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7ED621BA962580083C9FE /* GraphLineChartViewContainer.swift */; };
 		B5B8367D1BA1C9540052C04D /* 5min.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5B8367C1BA1C9540052C04D /* 5min.mp3 */; };
 		B5BE596F1BA6C65C002AE353 /* PushButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE596E1BA6C65C002AE353 /* PushButtonView.swift */; };
 		B5BE59711BA6CE20002AE353 /* GraphingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE59701BA6CE20002AE353 /* GraphingModel.swift */; };
+		B5CE6BAF1BA8448500D527D8 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CE6BAE1BA8445500D527D8 /* Charts.framework */; };
+		B5CE6BB01BA8448500D527D8 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5CE6BAE1BA8445500D527D8 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5D8D68F1BA09BAA0033CC07 /* CelineDion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5D8D68E1BA09BAA0033CC07 /* CelineDion.mp3 */; };
 		B5D8D6911BA09BD30033CC07 /* MarcheImperiale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5D8D6901BA09BD30033CC07 /* MarcheImperiale.mp3 */; };
 		B5D8D6931BA09C6A0033CC07 /* NyanCat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5D8D6921BA09C6A0033CC07 /* NyanCat.mp3 */; };
 		B5D8D6951BA09D260033CC07 /* KingLouisSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5D8D6941BA09D260033CC07 /* KingLouisSong.mp3 */; };
 		B5D8D6971BA09DD30033CC07 /* DeGaulle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5D8D6961BA09DD30033CC07 /* DeGaulle.mp3 */; };
+		B5D9B98A1BA85EE300DB37BC /* GraphLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D9B9891BA85EE300DB37BC /* GraphLineChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,31 +43,62 @@
 			remoteGlobalIDString = B58CD8FC1B9F38E700AE9D90;
 			remoteInfo = FirstApp;
 		};
+		B5CE6BAD1BA8445500D527D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5CE6BA91BA8445500D527D8 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+		B5CE6BB11BA8448500D527D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5CE6BA91BA8445500D527D8 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B5CE6BB31BA8448500D527D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B5CE6BB01BA8448500D527D8 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		B5664E421BA32DFD00D3FA1C /* GraphigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphigViewController.swift; sourceTree = "<group>"; };
+		B5664E421BA32DFD00D3FA1C /* GraphingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphingViewController.swift; sourceTree = "<group>"; };
 		B57397861BA6D562008AA9E8 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
-		B58CD8FD1B9F38E700AE9D90 /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58CD9011B9F38E700AE9D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B58CD9021B9F38E700AE9D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B58CD9041B9F38E700AE9D90 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B58CD9071B9F38E700AE9D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B58CD9091B9F38E700AE9D90 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B58CD90C1B9F38E700AE9D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B58CD9121B9F38E700AE9D90 /* FirstAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58CD9171B9F38E700AE9D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B58CD9181B9F38E700AE9D90 /* FirstAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppTests.swift; sourceTree = "<group>"; };
 		B58CD9241B9F3F4700AE9D90 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		B58CD9271B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PinkFluffyUnicornsMusic.mp3; sourceTree = "<group>"; };
+		B5A7ED621BA962580083C9FE /* GraphLineChartViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphLineChartViewContainer.swift; sourceTree = "<group>"; };
 		B5B8367C1BA1C9540052C04D /* 5min.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5min.mp3; sourceTree = "<group>"; };
 		B5BE596E1BA6C65C002AE353 /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
 		B5BE59701BA6CE20002AE353 /* GraphingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphingModel.swift; sourceTree = "<group>"; };
+		B5CE6BA71BA8440F00D527D8 /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CE6BA81BA8440F00D527D8 /* FirstAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CE6BA91BA8445500D527D8 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../../Downloads/ios-charts-2.1.3/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
 		B5D8D68E1BA09BAA0033CC07 /* CelineDion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CelineDion.mp3; sourceTree = "<group>"; };
 		B5D8D6901BA09BD30033CC07 /* MarcheImperiale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MarcheImperiale.mp3; sourceTree = "<group>"; };
 		B5D8D6921BA09C6A0033CC07 /* NyanCat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = NyanCat.mp3; sourceTree = "<group>"; };
 		B5D8D6941BA09D260033CC07 /* KingLouisSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = KingLouisSong.mp3; sourceTree = "<group>"; };
 		B5D8D6961BA09DD30033CC07 /* DeGaulle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DeGaulle.mp3; sourceTree = "<group>"; };
+		B5D9B9891BA85EE300DB37BC /* GraphLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphLineChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5CE6BAF1BA8448500D527D8 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,9 +132,11 @@
 			isa = PBXGroup;
 			children = (
 				B5BE59701BA6CE20002AE353 /* GraphingModel.swift */,
-				B57397861BA6D562008AA9E8 /* GraphView.swift */,
-				B5664E421BA32DFD00D3FA1C /* GraphigViewController.swift */,
+				B5664E421BA32DFD00D3FA1C /* GraphingViewController.swift */,
 				B5BE596E1BA6C65C002AE353 /* PushButtonView.swift */,
+				B57397861BA6D562008AA9E8 /* GraphView.swift */,
+				B5A7ED621BA962580083C9FE /* GraphLineChartViewContainer.swift */,
+				B5D9B9891BA85EE300DB37BC /* GraphLineChartView.swift */,
 			);
 			name = Graphs;
 			sourceTree = "<group>";
@@ -106,19 +144,12 @@
 		B58CD8F41B9F38E700AE9D90 = {
 			isa = PBXGroup;
 			children = (
+				B5CE6BA91BA8445500D527D8 /* Charts.xcodeproj */,
 				B58CD8FF1B9F38E700AE9D90 /* FirstApp */,
 				B58CD9151B9F38E700AE9D90 /* FirstAppTests */,
-				B58CD8FE1B9F38E700AE9D90 /* Products */,
+				B5CE6BA71BA8440F00D527D8 /* FirstApp.app */,
+				B5CE6BA81BA8440F00D527D8 /* FirstAppTests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		B58CD8FE1B9F38E700AE9D90 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B58CD8FD1B9F38E700AE9D90 /* FirstApp.app */,
-				B58CD9121B9F38E700AE9D90 /* FirstAppTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B58CD8FF1B9F38E700AE9D90 /* FirstApp */ = {
@@ -162,6 +193,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B5CE6BAA1BA8445500D527D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5CE6BAE1BA8445500D527D8 /* Charts.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B5D8D68D1BA095340033CC07 /* SoundAssets */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,14 +225,16 @@
 				B58CD8F91B9F38E700AE9D90 /* Sources */,
 				B58CD8FA1B9F38E700AE9D90 /* Frameworks */,
 				B58CD8FB1B9F38E700AE9D90 /* Resources */,
+				B5CE6BB31BA8448500D527D8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B5CE6BB21BA8448500D527D8 /* PBXTargetDependency */,
 			);
 			name = FirstApp;
 			productName = FirstApp;
-			productReference = B58CD8FD1B9F38E700AE9D90 /* FirstApp.app */;
+			productReference = B5CE6BA71BA8440F00D527D8 /* FirstApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B58CD9111B9F38E700AE9D90 /* FirstAppTests */ = {
@@ -211,7 +252,7 @@
 			);
 			name = FirstAppTests;
 			productName = FirstAppTests;
-			productReference = B58CD9121B9F38E700AE9D90 /* FirstAppTests.xctest */;
+			productReference = B5CE6BA81BA8440F00D527D8 /* FirstAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -241,8 +282,14 @@
 				Base,
 			);
 			mainGroup = B58CD8F41B9F38E700AE9D90;
-			productRefGroup = B58CD8FE1B9F38E700AE9D90 /* Products */;
+			productRefGroup = B58CD8F41B9F38E700AE9D90;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B5CE6BAA1BA8445500D527D8 /* Products */;
+					ProjectRef = B5CE6BA91BA8445500D527D8 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B58CD8FC1B9F38E700AE9D90 /* FirstApp */,
@@ -250,6 +297,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B5CE6BAE1BA8445500D527D8 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = B5CE6BAD1BA8445500D527D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B58CD8FB1B9F38E700AE9D90 /* Resources */ = {
@@ -286,12 +343,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5BE596F1BA6C65C002AE353 /* PushButtonView.swift in Sources */,
+				B5A7ED631BA962580083C9FE /* GraphLineChartViewContainer.swift in Sources */,
 				B58CD9251B9F3F4700AE9D90 /* MusicViewController.swift in Sources */,
+				B5D9B98A1BA85EE300DB37BC /* GraphLineChartView.swift in Sources */,
 				B57397871BA6D562008AA9E8 /* GraphView.swift in Sources */,
 				B58CD9051B9F38E700AE9D90 /* MainViewController.swift in Sources */,
 				B5BE59711BA6CE20002AE353 /* GraphingModel.swift in Sources */,
 				B58CD9031B9F38E700AE9D90 /* AppDelegate.swift in Sources */,
-				B5664E431BA32DFD00D3FA1C /* GraphigViewController.swift in Sources */,
+				B5664E431BA32DFD00D3FA1C /* GraphingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +371,11 @@
 			isa = PBXTargetDependency;
 			target = B58CD8FC1B9F38E700AE9D90 /* FirstApp */;
 			targetProxy = B58CD9131B9F38E700AE9D90 /* PBXContainerItemProxy */;
+		};
+		B5CE6BB21BA8448500D527D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = B5CE6BB11BA8448500D527D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,6 +489,7 @@
 				INFOPLIST_FILE = FirstApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -435,6 +500,7 @@
 				INFOPLIST_FILE = FirstApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

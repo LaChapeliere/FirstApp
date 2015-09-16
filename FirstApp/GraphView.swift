@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Charts //Using Chart framework only works for iOS8. For iOS7, see workaround on https://github.com/danielgindi/ios-charts
 
 @IBDesignable class GraphView: UIView {
     @IBInspectable var backgroundStartColor: UIColor = UIColor.greenColor()
@@ -17,7 +18,6 @@ import UIKit
     
     var graphPoints = [Int]()
     let maxValue = 100 //To get adaptative maxValue, put it in the drawRect func and set it to maxElements(graphPoints)
-
     
     override func drawRect(rect: CGRect) {
         let width = rect.width
