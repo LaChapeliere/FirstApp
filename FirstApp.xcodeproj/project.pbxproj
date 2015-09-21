@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B514AA931BB05DDA00F46551 /* CPPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514AA921BB05DDA00F46551 /* CPPViewController.swift */; };
+		B514AA981BB0606700F46551 /* CPPFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B514AA961BB0606700F46551 /* CPPFile.cpp */; };
+		B514AA9D1BB0656F00F46551 /* ObjCToCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = B514AA9C1BB0656F00F46551 /* ObjCToCPP.mm */; };
 		B5664E431BA32DFD00D3FA1C /* GraphingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5664E421BA32DFD00D3FA1C /* GraphingViewController.swift */; };
 		B57397871BA6D562008AA9E8 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57397861BA6D562008AA9E8 /* GraphView.swift */; };
+		B57DDDFB1BA9AE1100CC691C /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57DDDFA1BA9AE1100CC691C /* LogViewController.swift */; };
+		B57DDE001BA9BF4A00CC691C /* UserLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57DDDFF1BA9BF4A00CC691C /* UserLogModel.swift */; };
+		B57DDE021BA9CDE600CC691C /* TestUserLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57DDE011BA9CDE600CC691C /* TestUserLogModel.swift */; };
+		B57DDE031BA9D13D00CC691C /* UserLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57DDDFF1BA9BF4A00CC691C /* UserLogModel.swift */; };
 		B58CD9031B9F38E700AE9D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CD9021B9F38E700AE9D90 /* AppDelegate.swift */; };
 		B58CD9051B9F38E700AE9D90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CD9041B9F38E700AE9D90 /* MainViewController.swift */; };
 		B58CD9081B9F38E700AE9D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58CD9061B9F38E700AE9D90 /* Main.storyboard */; };
 		B58CD90A1B9F38E700AE9D90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58CD9091B9F38E700AE9D90 /* Images.xcassets */; };
 		B58CD90D1B9F38E700AE9D90 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B58CD90B1B9F38E700AE9D90 /* LaunchScreen.xib */; };
-		B58CD9191B9F38E700AE9D90 /* FirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CD9181B9F38E700AE9D90 /* FirstAppTests.swift */; };
 		B58CD9221B9F3B9E00AE9D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58CD9061B9F38E700AE9D90 /* Main.storyboard */; };
 		B58CD9231B9F3BA200AE9D90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CD9041B9F38E700AE9D90 /* MainViewController.swift */; };
 		B58CD9251B9F3F4700AE9D90 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CD9241B9F3F4700AE9D90 /* MusicViewController.swift */; };
@@ -22,6 +28,7 @@
 		B58CD9281B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B58CD9271B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 */; };
 		B58CD9291B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B58CD9271B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 */; };
 		B5A7ED631BA962580083C9FE /* GraphLineChartViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A7ED621BA962580083C9FE /* GraphLineChartViewContainer.swift */; };
+		B5A8894D1BB01BFB00255188 /* UserLoggedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8894C1BB01BFA00255188 /* UserLoggedViewController.swift */; };
 		B5B8367D1BA1C9540052C04D /* 5min.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5B8367C1BA1C9540052C04D /* 5min.mp3 */; };
 		B5BE596F1BA6C65C002AE353 /* PushButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE596E1BA6C65C002AE353 /* PushButtonView.swift */; };
 		B5BE59711BA6CE20002AE353 /* GraphingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE59701BA6CE20002AE353 /* GraphingModel.swift */; };
@@ -74,8 +81,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B514AA921BB05DDA00F46551 /* CPPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPPViewController.swift; path = ../CPPViewController.swift; sourceTree = "<group>"; };
+		B514AA951BB0606700F46551 /* FirstApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirstApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		B514AA961BB0606700F46551 /* CPPFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPPFile.cpp; sourceTree = "<group>"; };
+		B514AA971BB0606700F46551 /* CPPFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPFile.h; sourceTree = "<group>"; };
+		B514AA9B1BB0612900F46551 /* ObjCToCPP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCToCPP.h; sourceTree = "<group>"; };
+		B514AA9C1BB0656F00F46551 /* ObjCToCPP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjCToCPP.mm; sourceTree = "<group>"; };
 		B5664E421BA32DFD00D3FA1C /* GraphingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphingViewController.swift; sourceTree = "<group>"; };
 		B57397861BA6D562008AA9E8 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		B57DDDFA1BA9AE1100CC691C /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		B57DDDFF1BA9BF4A00CC691C /* UserLogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLogModel.swift; sourceTree = "<group>"; };
+		B57DDE011BA9CDE600CC691C /* TestUserLogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUserLogModel.swift; sourceTree = "<group>"; };
 		B58CD9011B9F38E700AE9D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B58CD9021B9F38E700AE9D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B58CD9041B9F38E700AE9D90 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -83,10 +99,10 @@
 		B58CD9091B9F38E700AE9D90 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B58CD90C1B9F38E700AE9D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B58CD9171B9F38E700AE9D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B58CD9181B9F38E700AE9D90 /* FirstAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppTests.swift; sourceTree = "<group>"; };
 		B58CD9241B9F3F4700AE9D90 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		B58CD9271B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PinkFluffyUnicornsMusic.mp3; sourceTree = "<group>"; };
 		B5A7ED621BA962580083C9FE /* GraphLineChartViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphLineChartViewContainer.swift; sourceTree = "<group>"; };
+		B5A8894C1BB01BFA00255188 /* UserLoggedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoggedViewController.swift; sourceTree = "<group>"; };
 		B5B8367C1BA1C9540052C04D /* 5min.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5min.mp3; sourceTree = "<group>"; };
 		B5BE596E1BA6C65C002AE353 /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
 		B5BE59701BA6CE20002AE353 /* GraphingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphingModel.swift; sourceTree = "<group>"; };
@@ -120,6 +136,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B514AA941BB05DE500F46551 /* CPP */ = {
+			isa = PBXGroup;
+			children = (
+				B514AA921BB05DDA00F46551 /* CPPViewController.swift */,
+				B514AA961BB0606700F46551 /* CPPFile.cpp */,
+				B514AA971BB0606700F46551 /* CPPFile.h */,
+				B514AA9B1BB0612900F46551 /* ObjCToCPP.h */,
+				B514AA9C1BB0656F00F46551 /* ObjCToCPP.mm */,
+			);
+			name = CPP;
+			sourceTree = "<group>";
+		};
 		B57397881BA70566008AA9E8 /* Music */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +169,16 @@
 			name = Graphs;
 			sourceTree = "<group>";
 		};
+		B57DDDFC1BA9AE1900CC691C /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				B57DDDFF1BA9BF4A00CC691C /* UserLogModel.swift */,
+				B57DDDFA1BA9AE1100CC691C /* LogViewController.swift */,
+				B5A8894C1BB01BFA00255188 /* UserLoggedViewController.swift */,
+			);
+			name = Log;
+			sourceTree = "<group>";
+		};
 		B58CD8F41B9F38E700AE9D90 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +197,8 @@
 				B58CD9041B9F38E700AE9D90 /* MainViewController.swift */,
 				B57397881BA70566008AA9E8 /* Music */,
 				B57397891BA70571008AA9E8 /* Graphs */,
+				B57DDDFC1BA9AE1900CC691C /* Log */,
+				B514AA941BB05DE500F46551 /* CPP */,
 				B58CD9001B9F38E700AE9D90 /* Supporting Files */,
 			);
 			path = FirstApp;
@@ -167,6 +207,7 @@
 		B58CD9001B9F38E700AE9D90 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B514AA951BB0606700F46551 /* FirstApp-Bridging-Header.h */,
 				B5D8D68D1BA095340033CC07 /* SoundAssets */,
 				B58CD90B1B9F38E700AE9D90 /* LaunchScreen.xib */,
 				B58CD9091B9F38E700AE9D90 /* Images.xcassets */,
@@ -179,7 +220,7 @@
 		B58CD9151B9F38E700AE9D90 /* FirstAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				B58CD9181B9F38E700AE9D90 /* FirstAppTests.swift */,
+				B57DDE011BA9CDE600CC691C /* TestUserLogModel.swift */,
 				B58CD9161B9F38E700AE9D90 /* Supporting Files */,
 			);
 			path = FirstAppTests;
@@ -343,14 +384,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5BE596F1BA6C65C002AE353 /* PushButtonView.swift in Sources */,
+				B514AA9D1BB0656F00F46551 /* ObjCToCPP.mm in Sources */,
+				B514AA981BB0606700F46551 /* CPPFile.cpp in Sources */,
+				B57DDDFB1BA9AE1100CC691C /* LogViewController.swift in Sources */,
 				B5A7ED631BA962580083C9FE /* GraphLineChartViewContainer.swift in Sources */,
 				B58CD9251B9F3F4700AE9D90 /* MusicViewController.swift in Sources */,
 				B5D9B98A1BA85EE300DB37BC /* GraphLineChartView.swift in Sources */,
+				B514AA931BB05DDA00F46551 /* CPPViewController.swift in Sources */,
 				B57397871BA6D562008AA9E8 /* GraphView.swift in Sources */,
 				B58CD9051B9F38E700AE9D90 /* MainViewController.swift in Sources */,
 				B5BE59711BA6CE20002AE353 /* GraphingModel.swift in Sources */,
 				B58CD9031B9F38E700AE9D90 /* AppDelegate.swift in Sources */,
+				B5A8894D1BB01BFB00255188 /* UserLoggedViewController.swift in Sources */,
 				B5664E431BA32DFD00D3FA1C /* GraphingViewController.swift in Sources */,
+				B57DDE001BA9BF4A00CC691C /* UserLogModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,9 +405,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57DDE031BA9D13D00CC691C /* UserLogModel.swift in Sources */,
 				B58CD9261B9F3F4700AE9D90 /* MusicViewController.swift in Sources */,
-				B58CD9191B9F38E700AE9D90 /* FirstAppTests.swift in Sources */,
 				B58CD9231B9F3BA200AE9D90 /* MainViewController.swift in Sources */,
+				B57DDE021BA9CDE600CC691C /* TestUserLogModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,10 +534,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = FirstApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FirstApp/FirstApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -497,10 +548,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = FirstApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FirstApp/FirstApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
