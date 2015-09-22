@@ -17,14 +17,16 @@ class CPPViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     @IBAction func goAction() {
-        activityIndicator.startAnimating()
-        let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-        let group = dispatch_group_create()
-        dispatch_group_async(group, queue) {
+        self.activityIndicator.startAnimating()
+        let qos = Int(QOS_CLASS_USER_INITIATED.value)
+        
+        dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_USER_INITIATED.value), 0)) { () -> Void in
             self.count = Useless_ObjCtoCPlusPlus.waitingFuncCPlusPlus(self.count)
+            
+            dispatch_async(dispatch_get_main_queue()) { () -> Void in
+                self.activityIndicator.stopAnimating()
+                self.label.text = "Congratulation, you have run \(self.count) C++ function(s)!"
+            }
         }
-        dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
-        activityIndicator.stopAnimating()
-        label.text = "Congratulation, you have run \(count) C++ functions!"
     }
 }
