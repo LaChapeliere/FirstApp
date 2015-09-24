@@ -10,10 +10,14 @@
 #define __FirstApp__CPPFile__
 
 #include <stdio.h>
+#include <chrono>
+#include <thread>
+#include "DoStuff.h"
 
 class Useless {
 public:
     static int waitingFunc(int input);
+    static int doStuffLib(int input);
 };
 
 #endif /* defined(__FirstApp__CPPFile__) */

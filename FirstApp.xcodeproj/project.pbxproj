@@ -10,6 +10,7 @@
 		B514AA931BB05DDA00F46551 /* CPPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514AA921BB05DDA00F46551 /* CPPViewController.swift */; };
 		B514AA981BB0606700F46551 /* CPPFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B514AA961BB0606700F46551 /* CPPFile.cpp */; };
 		B514AA9D1BB0656F00F46551 /* ObjCToCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = B514AA9C1BB0656F00F46551 /* ObjCToCPP.mm */; };
+		B53B15A61BB4412600CD862D /* libDoStuff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B15A11BB4409700CD862D /* libDoStuff.a */; };
 		B5664E431BA32DFD00D3FA1C /* GraphingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5664E421BA32DFD00D3FA1C /* GraphingViewController.swift */; };
 		B57397871BA6D562008AA9E8 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57397861BA6D562008AA9E8 /* GraphView.swift */; };
 		B5772FFC1BB2950600C03E11 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5772FFB1BB2950600C03E11 /* AnimationViewController.swift */; };
@@ -48,6 +49,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B53B15A01BB4409700CD862D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B53B159B1BB4409700CD862D /* DoStuff.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B53B157B1BB435FC00CD862D;
+			remoteInfo = DoStuff;
+		};
+		B53B15A41BB4410B00CD862D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B53B159B1BB4409700CD862D /* DoStuff.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B53B157A1BB435FC00CD862D;
+			remoteInfo = DoStuff;
+		};
 		B58CD9131B9F38E700AE9D90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B58CD8F51B9F38E700AE9D90 /* Project object */;
@@ -92,6 +107,7 @@
 		B514AA971BB0606700F46551 /* CPPFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPFile.h; sourceTree = "<group>"; };
 		B514AA9B1BB0612900F46551 /* ObjCToCPP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCToCPP.h; sourceTree = "<group>"; };
 		B514AA9C1BB0656F00F46551 /* ObjCToCPP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjCToCPP.mm; sourceTree = "<group>"; };
+		B53B159B1BB4409700CD862D /* DoStuff.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DoStuff.xcodeproj; path = ../DoStuff/DoStuff/DoStuff.xcodeproj; sourceTree = "<group>"; };
 		B5664E421BA32DFD00D3FA1C /* GraphingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphingViewController.swift; sourceTree = "<group>"; };
 		B57397861BA6D562008AA9E8 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		B5772FFB1BB2950600C03E11 /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53B15A61BB4412600CD862D /* libDoStuff.a in Frameworks */,
 				B5CE6BAF1BA8448500D527D8 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +173,14 @@
 				B514AA9C1BB0656F00F46551 /* ObjCToCPP.mm */,
 			);
 			name = CPP;
+			sourceTree = "<group>";
+		};
+		B53B159C1BB4409700CD862D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B53B15A11BB4409700CD862D /* libDoStuff.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		B57397881BA70566008AA9E8 /* Music */ = {
@@ -210,6 +235,7 @@
 		B58CD8F41B9F38E700AE9D90 = {
 			isa = PBXGroup;
 			children = (
+				B53B159B1BB4409700CD862D /* DoStuff.xcodeproj */,
 				B5CE6BA91BA8445500D527D8 /* Charts.xcodeproj */,
 				B58CD8FF1B9F38E700AE9D90 /* FirstApp */,
 				B58CD9151B9F38E700AE9D90 /* FirstAppTests */,
@@ -302,6 +328,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B53B15A51BB4410B00CD862D /* PBXTargetDependency */,
 				B5CE6BB21BA8448500D527D8 /* PBXTargetDependency */,
 			);
 			name = FirstApp;
@@ -361,6 +388,10 @@
 					ProductGroup = B5CE6BAA1BA8445500D527D8 /* Products */;
 					ProjectRef = B5CE6BA91BA8445500D527D8 /* Charts.xcodeproj */;
 				},
+				{
+					ProductGroup = B53B159C1BB4409700CD862D /* Products */;
+					ProjectRef = B53B159B1BB4409700CD862D /* DoStuff.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -371,6 +402,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		B53B15A11BB4409700CD862D /* libDoStuff.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDoStuff.a;
+			remoteRef = B53B15A01BB4409700CD862D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		B5CE6BAE1BA8445500D527D8 /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -451,6 +489,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B53B15A51BB4410B00CD862D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DoStuff;
+			targetProxy = B53B15A41BB4410B00CD862D /* PBXContainerItemProxy */;
+		};
 		B58CD9141B9F38E700AE9D90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B58CD8FC1B9F38E700AE9D90 /* FirstApp */;
@@ -570,17 +613,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = FirstApp/Info.plist;
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FirstApp",
 					/Users/Emma/Desktop/MyBrain/PlaygroundsSwift/DoStuff,
+					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-lstdc++";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FirstApp/FirstApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -591,16 +645,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = FirstApp/Info.plist;
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FirstApp",
 					/Users/Emma/Desktop/MyBrain/PlaygroundsSwift/DoStuff,
+					"$(PROJECT_DIR)",
 				);
-				OTHER_LDFLAGS = "-lstdc++";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FirstApp/FirstApp-Bridging-Header.h";
 			};

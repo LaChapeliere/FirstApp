@@ -7,10 +7,13 @@
 //
 
 #include "CPPFile.h"
-#include <chrono>
-#include <thread>
+
 
 int Useless::waitingFunc(int input) {
     std::this_thread::sleep_for (std::chrono::seconds(5));
     return input + 1;
+}
+
+int Useless::doStuffLib(int input) {
+    return doStuff(input);
 }

@@ -13,6 +13,7 @@
 
 @interface Useless_ObjCtoCPlusPlus : NSObject
 + (NSInteger) waitingFuncCPlusPlus: (NSInteger) input;
++ (NSInteger) doStuffCPlusPlus: (NSInteger) input;
 @end
 
 #endif

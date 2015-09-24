@@ -15,4 +15,9 @@
 {
     return (NSInteger) Useless::waitingFunc((int) input);
 }
+
++ (NSInteger) doStuffCPlusPlus: (NSInteger) input
+{
+    return (NSInteger) Useless::doStuffLib((int) input);
+}
 @end
