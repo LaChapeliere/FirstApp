@@ -12,10 +12,15 @@
 		B514AA9D1BB0656F00F46551 /* ObjCToCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = B514AA9C1BB0656F00F46551 /* ObjCToCPP.mm */; };
 		B5664E431BA32DFD00D3FA1C /* GraphingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5664E421BA32DFD00D3FA1C /* GraphingViewController.swift */; };
 		B57397871BA6D562008AA9E8 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57397861BA6D562008AA9E8 /* GraphView.swift */; };
+		B5772FFC1BB2950600C03E11 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5772FFB1BB2950600C03E11 /* AnimationViewController.swift */; };
+		B5772FFF1BB2A36200C03E11 /* DropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5772FFE1BB2A36200C03E11 /* DropView.swift */; };
+		B57730011BB2A4EA00C03E11 /* DropBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57730001BB2A4EA00C03E11 /* DropBehavior.swift */; };
+		B57730031BB2A8CF00C03E11 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B57730021BB2A8CF00C03E11 /* Settings.bundle */; };
 		B57DDDFB1BA9AE1100CC691C /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57DDDFA1BA9AE1100CC691C /* LogViewController.swift */; };
 		B57DDE001BA9BF4A00CC691C /* UserLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57DDDFF1BA9BF4A00CC691C /* UserLogModel.swift */; };
 		B57DDE021BA9CDE600CC691C /* TestUserLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57DDE011BA9CDE600CC691C /* TestUserLogModel.swift */; };
 		B57DDE031BA9D13D00CC691C /* UserLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57DDDFF1BA9BF4A00CC691C /* UserLogModel.swift */; };
+		B58646FD1BB3EB0E0071DBCD /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58646FC1BB3EB0E0071DBCD /* WebViewController.swift */; };
 		B58CD9031B9F38E700AE9D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CD9021B9F38E700AE9D90 /* AppDelegate.swift */; };
 		B58CD9051B9F38E700AE9D90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CD9041B9F38E700AE9D90 /* MainViewController.swift */; };
 		B58CD9081B9F38E700AE9D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58CD9061B9F38E700AE9D90 /* Main.storyboard */; };
@@ -89,9 +94,14 @@
 		B514AA9C1BB0656F00F46551 /* ObjCToCPP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjCToCPP.mm; sourceTree = "<group>"; };
 		B5664E421BA32DFD00D3FA1C /* GraphingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphingViewController.swift; sourceTree = "<group>"; };
 		B57397861BA6D562008AA9E8 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		B5772FFB1BB2950600C03E11 /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		B5772FFE1BB2A36200C03E11 /* DropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropView.swift; sourceTree = "<group>"; };
+		B57730001BB2A4EA00C03E11 /* DropBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropBehavior.swift; sourceTree = "<group>"; };
+		B57730021BB2A8CF00C03E11 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		B57DDDFA1BA9AE1100CC691C /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		B57DDDFF1BA9BF4A00CC691C /* UserLogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLogModel.swift; sourceTree = "<group>"; };
 		B57DDE011BA9CDE600CC691C /* TestUserLogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUserLogModel.swift; sourceTree = "<group>"; };
+		B58646FC1BB3EB0E0071DBCD /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B58CD9011B9F38E700AE9D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B58CD9021B9F38E700AE9D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B58CD9041B9F38E700AE9D90 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +179,16 @@
 			name = Graphs;
 			sourceTree = "<group>";
 		};
+		B5772FFD1BB2950F00C03E11 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				B5772FFB1BB2950600C03E11 /* AnimationViewController.swift */,
+				B57730001BB2A4EA00C03E11 /* DropBehavior.swift */,
+				B5772FFE1BB2A36200C03E11 /* DropView.swift */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
 		B57DDDFC1BA9AE1900CC691C /* Log */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +197,14 @@
 				B5A8894C1BB01BFA00255188 /* UserLoggedViewController.swift */,
 			);
 			name = Log;
+			sourceTree = "<group>";
+		};
+		B58646FE1BB3EB140071DBCD /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				B58646FC1BB3EB0E0071DBCD /* WebViewController.swift */,
+			);
+			name = Web;
 			sourceTree = "<group>";
 		};
 		B58CD8F41B9F38E700AE9D90 = {
@@ -199,6 +227,8 @@
 				B57397891BA70571008AA9E8 /* Graphs */,
 				B57DDDFC1BA9AE1900CC691C /* Log */,
 				B514AA941BB05DE500F46551 /* CPP */,
+				B5772FFD1BB2950F00C03E11 /* Animation */,
+				B58646FE1BB3EB140071DBCD /* Web */,
 				B58CD9001B9F38E700AE9D90 /* Supporting Files */,
 			);
 			path = FirstApp;
@@ -207,6 +237,7 @@
 		B58CD9001B9F38E700AE9D90 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B57730021BB2A8CF00C03E11 /* Settings.bundle */,
 				B514AA951BB0606700F46551 /* FirstApp-Bridging-Header.h */,
 				B5D8D68D1BA095340033CC07 /* SoundAssets */,
 				B58CD90B1B9F38E700AE9D90 /* LaunchScreen.xib */,
@@ -363,6 +394,7 @@
 				B5D8D6971BA09DD30033CC07 /* DeGaulle.mp3 in Resources */,
 				B5B8367D1BA1C9540052C04D /* 5min.mp3 in Resources */,
 				B58CD9281B9F42C900AE9D90 /* PinkFluffyUnicornsMusic.mp3 in Resources */,
+				B57730031BB2A8CF00C03E11 /* Settings.bundle in Resources */,
 				B58CD90A1B9F38E700AE9D90 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,13 +415,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58646FD1BB3EB0E0071DBCD /* WebViewController.swift in Sources */,
 				B5BE596F1BA6C65C002AE353 /* PushButtonView.swift in Sources */,
 				B514AA9D1BB0656F00F46551 /* ObjCToCPP.mm in Sources */,
 				B514AA981BB0606700F46551 /* CPPFile.cpp in Sources */,
 				B57DDDFB1BA9AE1100CC691C /* LogViewController.swift in Sources */,
+				B57730011BB2A4EA00C03E11 /* DropBehavior.swift in Sources */,
 				B5A7ED631BA962580083C9FE /* GraphLineChartViewContainer.swift in Sources */,
 				B58CD9251B9F3F4700AE9D90 /* MusicViewController.swift in Sources */,
 				B5D9B98A1BA85EE300DB37BC /* GraphLineChartView.swift in Sources */,
+				B5772FFC1BB2950600C03E11 /* AnimationViewController.swift in Sources */,
 				B514AA931BB05DDA00F46551 /* CPPViewController.swift in Sources */,
 				B57397871BA6D562008AA9E8 /* GraphView.swift in Sources */,
 				B58CD9051B9F38E700AE9D90 /* MainViewController.swift in Sources */,
@@ -398,6 +433,7 @@
 				B5A8894D1BB01BFB00255188 /* UserLoggedViewController.swift in Sources */,
 				B5664E431BA32DFD00D3FA1C /* GraphingViewController.swift in Sources */,
 				B57DDE001BA9BF4A00CC691C /* UserLogModel.swift in Sources */,
+				B5772FFF1BB2A36200C03E11 /* DropView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +574,13 @@
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = FirstApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FirstApp",
+					/Users/Emma/Desktop/MyBrain/PlaygroundsSwift/DoStuff,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FirstApp/FirstApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -552,6 +595,12 @@
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = FirstApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FirstApp",
+					/Users/Emma/Desktop/MyBrain/PlaygroundsSwift/DoStuff,
+				);
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FirstApp/FirstApp-Bridging-Header.h";
 			};
